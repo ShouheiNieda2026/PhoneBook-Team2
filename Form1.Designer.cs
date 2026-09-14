@@ -28,13 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.nameList = new System.Windows.Forms.ListBox();
+            this.phoneNumber = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // nameList
+            // 
+            this.nameList.FormattingEnabled = true;
+            this.nameList.ItemHeight = 15;
+            this.nameList.Location = new System.Drawing.Point(113, 142);
+            this.nameList.Name = "nameList";
+            this.nameList.Size = new System.Drawing.Size(120, 94);
+            this.nameList.TabIndex = 0;
+            // 
+            // phoneNumber
+            // 
+            this.phoneNumber.AutoSize = true;
+            this.phoneNumber.Location = new System.Drawing.Point(432, 220);
+            this.phoneNumber.Name = "phoneNumber";
+            this.phoneNumber.Size = new System.Drawing.Size(43, 15);
+            this.phoneNumber.TabIndex = 1;
+            this.phoneNumber.Text = "label1";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.phoneNumber);
+            this.Controls.Add(this.nameList);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox nameList;
+        private System.Windows.Forms.Label phoneNumber;
     }
 }
 
